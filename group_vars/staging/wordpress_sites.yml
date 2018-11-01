@@ -6,9 +6,9 @@ wordpress_sites:
   alpha:
     site_hosts:
       - canonical: <alpha_url> #
-    local_path: ../../ 
+    local_path: ../../
     repo: <project_repo> #
-    branch: master
+    branch: alpha
     multisite:
       enabled: false
     ssl:
@@ -17,12 +17,12 @@ wordpress_sites:
     cache:
       enabled: false
     env:
-      wp_env: production
+      wp_env: staging
       db_name: <db_name> #
       db_user: <db_user> #
   beta:
     site_hosts:
-      - canonical: <beta_url> #
+      - canonical: <beta_url>  #
     local_path: ../../
     repo: <project_repo> #
     branch: beta
