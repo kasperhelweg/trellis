@@ -50,7 +50,7 @@ pid        /run/nginx.pid;
 {% endblock %}
 
 http {
-  {% block http_begin %}{% endblock %}Accept
+  {% block http_begin %}{% endblock %}
 
   {% block hashes -%}
   server_names_hash_bucket_size 128;
