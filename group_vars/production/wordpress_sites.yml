@@ -3,12 +3,12 @@
 # Define accompanying passwords/secrets in group_vars/production/vault.yml
 
 wordpress_sites:
-  production:
+  api.<project-name>.molamil.com:
     site_hosts:
-      - canonical: <production_url> #
-      - canonical: <alt_production_url> #
+      - canonical: <production_url> # <-
+      - canonical: <alt_production_url> # <-
     local_path: ../../
-    repo: <project_repo> #
+    repo: <project_repo> # <-
     branch: master
     multisite:
       enabled: false
@@ -19,5 +19,5 @@ wordpress_sites:
       enabled: false
     env:
       wp_env: production
-      db_name: <db_name> #
-      db_user: <db_user> #
+      db_name: <db_name> # <-
+      db_user: <db_user> # <-

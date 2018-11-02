@@ -3,11 +3,11 @@
 # Define accompanying passwords/secrets in group_vars/development/vault.yml
 
 wordpress_sites:
-  api.<project-name>.development.com: #
+  api.<project-name>.development.molamil.com: # <-
     site_hosts:
-      - canonical: api.<project-name>.development.molamil.com #
+      - canonical: api.<project-name>.development.molamil.com # <-
     local_path: ../../
-    admin_email: signup@molamil.com
+    admin_email: signup@molamil.com # <-
     multisite:
       enabled: false
     ssl:
@@ -16,5 +16,5 @@ wordpress_sites:
     cache:
       enabled: false
     env:
-      db_name: <db_name> #
-      db_user: <db_user> #
+      db_name: <db_name> # <-
+      db_user: <db_user> # <-
